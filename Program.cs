@@ -42,20 +42,20 @@ else if (choice == 2)
 {
     Console.WriteLine("2ta son va bitta operator kiritng:");
     Console.Write("1-son:");
-    decimal son1 =Convert.ToDecimal(Console.ReadLine());
+    double son1 =Convert.ToDouble(Console.ReadLine());
     Console.Write("2-son:");
-    decimal son2 =Convert.ToDecimal(Console.ReadLine());
+    double son2 =Convert.ToDouble(Console.ReadLine());
     Console.WriteLine("1.Logorifm 2.Darajaga chiqarish (tanlash 1 yoki 2)");
     int MurrakkabOperator = Convert.ToInt32(Console.ReadLine());
     if (MurrakkabOperator == 1)
     {
-        double result = Math.Log((double)son1,(double)son2);
+        double result = Math.Log(son1, son2);
         Console.WriteLine("natija:"+result);
     }
     else if (MurrakkabOperator == 2)
     {
-        decimal result1 = son1 * son1;
-        decimal result2 = son2 * son2;
+        double result1 = Math.Pow(son1, 2);
+        double result2 = Math.Pow(son2, 2);
         Console.WriteLine("natija:"+result1);
         Console.WriteLine("natija:"+result2);
 
