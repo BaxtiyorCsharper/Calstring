@@ -1,0 +1,74 @@
+﻿Console.WriteLine("Calstring dasturiga xush kelisiz!");
+Console.WriteLine("Siz ikkita son kiritasiz va bitta operator kiritasiz.");
+Console.WriteLine("Kiritilgan son va operatorga qarab dastur natija chiqaradi.");
+Console.WriteLine("Quyidagi amallardan birini tanlang:(tanlash 1 yoki 2)");
+Console.WriteLine("1.Oddiy(+-*/) 2.Murrakkab(Logorifm/darajaga chiqarish)");
+int choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 1)
+{
+    Console.WriteLine("2ta son va bitta operator kiritng:");
+    Console.Write("1-son:");
+    decimal son1 =Convert.ToDecimal(Console.ReadLine());
+    Console.Write("2-son:");
+    decimal son2 =Convert.ToDecimal(Console.ReadLine());
+    Console.WriteLine("1.+  2.-  3.*  4./ (tanlang:1/2/3/4)");
+    int OddiyOperator = Convert.ToInt32(Console.ReadLine());
+    if (OddiyOperator == 1)
+    {
+        decimal result = son1 + son2;
+        Console.WriteLine("natija:"+result);
+    }
+    else if (OddiyOperator == 2)
+    {
+        decimal result = son1 - son2;
+        Console.WriteLine("natija:"+result);
+    }
+    else if (OddiyOperator == 3)
+    {
+        decimal result = son1 * son2;
+        Console.WriteLine("natija:"+result);
+    }
+    else if (OddiyOperator == 4)
+    {
+        decimal result = son1 / son2;
+        Console.WriteLine("natija:"+result);
+    }
+    else
+    {
+        Console.WriteLine("noto'g'ri operator kiritildi");
+    }
+}
+else if (choice == 2)
+{
+    Console.WriteLine("2ta son va bitta operator kiritng:");
+    Console.Write("1-son:");
+    decimal son1 =Convert.ToDecimal(Console.ReadLine());
+    Console.Write("2-son:");
+    decimal son2 =Convert.ToDecimal(Console.ReadLine());
+    Console.WriteLine("1.Logorifm 2.Darajaga chiqarish (tanlash 1 yoki 2)");
+    int MurrakkabOperator = Convert.ToInt32(Console.ReadLine());
+    if (MurrakkabOperator == 1)
+    {
+        double result = Math.Log((double)son1,(double)son2);
+        Console.WriteLine("natija:"+result);
+    }
+    else if (MurrakkabOperator == 2)
+    {
+        decimal result1 = son1 * son1;
+        decimal result2 = son2 * son2;
+        Console.WriteLine("natija:"+result1);
+        Console.WriteLine("natija:"+result2);
+
+    }
+}
+else
+{
+    Console.WriteLine("Kechirasiz ikki operatordan birini tanlang");
+}
+
+
+
+
+
+
+
