@@ -65,14 +65,15 @@ else if (choice == 2)
         Console.WriteLine("Siz darajaga oshrish operatorini tanladingiz");
         double result1 = Math.Pow(son1, 2);
         double result2 = Math.Pow(son2, 2);
-        Console.WriteLine("natija:"+result1);
-        Console.WriteLine("natija:"+result2);
+        Console.WriteLine("Birinchi son natijasi:"+result1);
+        Console.WriteLine("Ikkinchi son natijasi:"+result2);
 
     }
 }
 else
 {
-    Console.WriteLine("Kechirasiz ikki operatordan birini tanlang");
+    Console.WriteLine("Kechirasiz ikki operatordan birini tanlang!");
+    
 }
 
 
