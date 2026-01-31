@@ -1,39 +1,43 @@
 ﻿Console.WriteLine("Calstring dasturiga xush kelisiz!");
 Console.WriteLine("Siz ikkita son kiritasiz va bitta operator kiritasiz.");
-Console.WriteLine("Kiritilgan son va operatorga qarab dastur natija chiqaradi.");
-Console.WriteLine("Quyidagi amallardan birini tanlang:(tanlash 1 yoki 2)");
+Console.WriteLine("Kiritilgan son va operatorga qarab dastur natija chiqaradi\n");
+Console.WriteLine("Quyidagi amallardan birini tanlang:");
 Console.WriteLine("1.Oddiy(+ - * /)");
-Console.WriteLine("2.Murrakkab(Logorifm/darajaga chiqarish)");
-int choice = Convert.ToInt32(Console.ReadLine());
-if (choice == 1)
+Console.Write("2.Murrakkab(Logorifm/darajaga chiqarish)\n(tanlash: 1 / 2)\nJavobingiz:");
+int userChoice = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+if (userChoice == 1)
 {
     Console.WriteLine("Siz oddiy amallar bajarishni tanladingiz!");
-    Console.WriteLine("2ta son va bitta operator kiritng:");
+    Console.WriteLine("Ikkita son kiritng:");
     Console.Write("1-son:");
     decimal son1 =Convert.ToDecimal(Console.ReadLine());
     Console.Write("2-son:");
     decimal son2 =Convert.ToDecimal(Console.ReadLine());
-    Console.WriteLine("1.+  2.-  3.*  4./ (tanlang:1/2/3/4)");
-    int OddiyOperator = Convert.ToInt32(Console.ReadLine());
-    if (OddiyOperator == 1)
+    Console.WriteLine();
+    Console.WriteLine("Operatorni tanlang:");
+    Console.Write("1.+  2.-  3.*  4./ \n(tanlash:1/2/3/4)\nJavobingiz:");
+    int oddiyOperator = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+    if (oddiyOperator == 1)
     {
         Console.WriteLine("Siz qo'shish operatorini tanladingiz");
         decimal result = son1 + son2;
         Console.WriteLine("natija:"+result);
     }
-    else if (OddiyOperator == 2)
+    else if (oddiyOperator == 2)
     {
         Console.WriteLine("Siz ayrish operatorini tanladingiz");
         decimal result = son1 - son2;
         Console.WriteLine("natija:"+result);
     }
-    else if (OddiyOperator == 3)
+    else if (oddiyOperator == 3)
     {
         Console.WriteLine("Siz ko'paytirish operatorini tanladingiz");
         decimal result = son1 * son2;
         Console.WriteLine("natija:"+result);
     }
-    else if (OddiyOperator == 4)
+    else if (oddiyOperator == 4)
     {
         Console.WriteLine("Siz bo'lish operatorini tanladingiz");
         decimal result = son1 / son2;
@@ -44,23 +48,26 @@ if (choice == 1)
         Console.WriteLine("noto'g'ri operator kiritildi");
     }
 }
-else if (choice == 2)
+else if (userChoice == 2)
 {
     System.Console.WriteLine("Siz murakkab amallar bajarishni tanladingiz!");
-    Console.WriteLine("2ta son va bitta operator kiritng:");
+    Console.WriteLine("Ikkita son kiritng:");
     Console.Write("1-son:");
     double son1 =Convert.ToDouble(Console.ReadLine());
     Console.Write("2-son:");
     double son2 =Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("1.Logorifm 2.Darajaga chiqarish (tanlash 1 yoki 2)");
-    int MurrakkabOperator = Convert.ToInt32(Console.ReadLine());
-    if (MurrakkabOperator == 1)
+    Console.WriteLine("");
+    Console.WriteLine("Operatorni tanlang:");
+    Console.Write("1.Logorifm 2.Darajaga chiqarish\n(tanlash: 1 / 2)\nJavobingiz:");
+    int murrakkabOperator = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+    if (murrakkabOperator == 1)
     {
         Console.WriteLine("Siz logorifm operatorini tanladingiz");
         double result = Math.Log(son1, son2);
         Console.WriteLine("natija:"+result);
     }
-    else if (MurrakkabOperator == 2)
+    else if (murrakkabOperator == 2)
     {
         Console.WriteLine("Siz darajaga oshrish operatorini tanladingiz");
         double result1 = Math.Pow(son1, 2);
