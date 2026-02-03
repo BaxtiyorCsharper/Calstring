@@ -1,8 +1,13 @@
-﻿Console.WriteLine("Calstring dasturiga xush kelisiz!");
+﻿
+static void CalstringInfo()
+{
+Console.WriteLine("Calstring dasturiga xush kelisiz!");
 Console.WriteLine("Siz ikkita son kiritasiz va bitta operator kiritasiz.");
 Console.WriteLine("Kiritilgan son va operatorga qarab dastur natija chiqaradi\n");
 Console.WriteLine("Quyidagi amallardan birini tanlang:");
 Console.WriteLine("1.Oddiy(+ - * /)");
+}
+CalstringInfo();
 Console.Write("2.Murrakkab(Logorifm/darajaga chiqarish)\n(tanlash: 1 / 2)\nJavobingiz:");
 int userChoice = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
